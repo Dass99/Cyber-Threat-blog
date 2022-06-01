@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Cyber Threat</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- css do bootstrap-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navegação-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('assets/img/WannaCry-bg.webp')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1>Um ataque virtual de proporções globais que atingiu pessoas, empresas e instituições no mundo todo</h1>
+                            <h2 class="subheading">E embora o ataque e suas consequências tenham sido imensas, existe a possibilidade de que ele pudesse ter sido evitado.</h2>
+                            <span class="meta">
+                                Postado por Douglas Santos
+                                
+                                em 01/06/2022
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <h2 class="section-heading">O que é o WannaCry, exatamente?</h2>
+                        <p>O WannaCry é um exemplo de ransomware de criptografia, um tipo de software malicioso (malware) usado por cibercriminosos para extorquir dinheiro.</p>
+                        <img src="/assets/img/img_01.png" alt="">
+                        <p>A imagem acima mostra a tela que aparecia nos computadores infectados pelo WannaCry.</p>
+                        <p>O WannaCry continua sendo uma das variedades mais conhecidas de ransomware em atividade. Por quê? Existem alguns motivos por WannaCry ter ganhado notoriedade: </p>
+                        <ul>
+                        <li>Pode ser transmitido como worm, o que significa que consegue se espalhar entre computadores e redes automaticamente (sem exigir interação humana).</li>
+                        <br>
+                        <li>O WannaCry explorou um exploit do Windows que tornou milhões de pessoas vulneráveis.</li>
+                        <br>
+                        <li>O resultado foi um prejuízo de centenas de milhões (ou até bilhões) de dólares.</li>
+                        <br>
+                        <li>A variedade de ransomware se espalhou de um jeito veloz e furioso e foi parado de jeito igualmente rápido.</li>
+                        <br>
+                        <li>Seu nome simples (e bem escolhido) também o tornou memorável. Você também não choraria se encontrasse todos os seus arquivos importantes bloqueados?</li>
+                        </ul>
+
+                        <h2>Como o WannaCry se espalha?</h2>
+                        <p>O WannaCry se espalhou usando a vulnerabilidade do Windows conhecida como MS17-010, que os cibercriminosos aproveitaram usando o exploit EternalBlue. A NSA(Agência de segurança nacional americana) descobriu essa vulnerabilidade de software e, em vez de relatá-la à Microsoft, desenvolveu um código para explorá-la chamado EternalBlue.</p>
+                        <p>O WannaCry visa redes que usam SMBv1, um protocolo de compartilhamento de arquivos que ajuda PCs a se comunicarem com impressoras e outros dispositivos conectados à mesma rede. O WannaCry se comporta como um worm, o que significa que pode se espalhar pelas redes. Uma vez instalado em um computador, o WannaCry pode escanear uma rede e encontrar dispositivos mais vulneráveis. Ele usa o exploit EternalBlue para a invasão e depois utiliza uma ferramenta backdoor chamada DoublePulsar para se autoinstalar e executar. Assim, ele pode se propagar sem interação humana e sem exigir um arquivo ou programa host, o que o classifica como um worm e não vírus.</p>
+                        
+                        <h2>Quem foi responsável pelo  WannaCry ?</h2>
+                        <p>Embora não possamos afirmar com certeza absoluta quem criou o WannaCry, a comunidade de segurança cibernética atribui o ransomware WannaCry à Coréia do Norte e seu grupo de cibercriminosos, <b>o Lazarus Group</b>. O FBI, juntamente com os pesquisadores de segurança cibernética, encontrou pistas ocultas por trás do código que sugeria essas origens. </p>
+                    
+                        <h2> Como o ataque foi parado? </h2>
+                        <p>O pesquisador de segurança cibernética, Marcus Hutchins, descobriu que, depois que o WannaCry entrava em um sistema, ele tentava se conectar a um URL específico. Se o URL não fosse encontrado, o ransomware infectava o sistema e criptografava arquivos. Hutchins conseguiu registrar um nome de domínio para criar um DNS sinkhole que funcionava como um kill switch e desativou o WannaCry. Ele enfrentou alguns dias tensos quando os cibercriminosos atacaram seu URL com uma variante de botnet Mirai (tentando um ataque DDoS para derrubar o URL e o kill switch).</p>
+                        <p>Hutchins conseguiu proteger o domínio usando uma versão do site em cache, que podia lidar com níveis mais altos de tráfego, e o kill switch aguentou. Não ficou claro por que o kill switch estava no código do WannaCry: se ele foi incluído acidentalmente ou se os cibercriminosos queriam ter o poder interromper o ataque.</p>
+                    
+                        <h2>Qual foi o custo do WannaCry?</h2>
+                        <p>Embora o WannaCry exigisse US$ 300 em bitcoin (ou US$ 600 após o prazo) de um cada usuário afetado, os danos foram muito maiores. Cerca de 330 pessoas ou organizações fizeram pagamentos, que totalizaram 51,6 bitcoins (no valor de aproximadamente US$ 130.634 no momento do pagamento). Esse foi o valor pago aos cibercriminosos, mas o custo real do WannaCry foi muito maior.</p>
+                        <p>Como muitas agências governamentais, universidades e organizações de saúde foram atingidas pelo WannaCry, juntamente com o controle de danos resultante, os custos de limpeza foram surpreendentes. A empresa de modelagem de riscos cibernéticos Cyence estimou o custo em até US$ 4 bilhões.</p>
+                        <br>
+                        <br><br>
+                        <h6>Dicionário de palavras</h6>
+                        <span><b>Kill Switch:</b> É um recurso de segurança VPN que corta automaticamente sua conexão com a Internet se o servidor VPN se desconectar.</span>
+                        <br><br>
+                        <span><b>DNS Sinkholing</b>: É um mecanismo destinado a proteger os usuários interceptando solicitações de DNS que tentam se conectar a domínios maliciosos ou indesejados conhecidos e retornando um endereço IP falso ou controlado.</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="https://www.linkedin.com/in/douglas-santos-8a8154218/">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://github.com/Dass99">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; Your Website 2022</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
